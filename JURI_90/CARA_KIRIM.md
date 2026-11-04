@@ -14,13 +14,15 @@ Agen tidak mendaftar, login, push, atau mengirim apa pun. Semua langkah dilakuka
 | Lampiran dari repo | `docs/methods.md`, `limitations.md`, `ai_use.md` (SI), `data_licenses.md`, `numbers.md`, `data/MANIFEST.sha256` |
 
 ## 2. Checklist H-1 (Jumat 13 Nov)
+*Versi lengkap satu halaman (termasuk tas dan jam per jam Sab–Min): `15-CHECKLIST-HARI-H.md`.*
+- [ ] Baca tab **Resources** di halaman tantangan (`/2026/challenges/modis-and-viirs-hot-spots/`, terbit 13 Nov) dan putuskan baris S8 (`12` §3)
 - [ ] Baca **Project Submission Guide** dan **Judging & Awards Guide** 2026. Ubah `01`, `09`, dan file ini kalau batas demo, label SI, atau field berbeda
 - [ ] Semua anggota sudah terdaftar dan ada di tim yang sama di **Local Event Bandung** (screenshot halaman tim)
 - [ ] Tantangan di halaman tim = "Harmonization of MODIS and VIIRS Hot Spots"
 - [ ] Earthdata Login dan **FIRMS MAP_KEY** berfungsi (uji satu panggilan `data_availability` di luar repo); MAP_KEY disimpan di pengelola sandi, bukan di grup
 - [ ] Akun GitHub + Cloudflare Pages siap; akun GEE aktif (untuk cadangan MCD64A1)
 - [ ] Laptop: Python 3.12 + DuckDB + pandas + geopandas + statsmodels; Node + Vite; Git; ffmpeg/ffprobe (untuk cek durasi video)
-- [ ] Matriks adaptasi `04` §7 sudah terisi sejak 28 Okt; balasan Local Lead sudah dibaca
+- [ ] Matriks adaptasi `04` §7 sudah terisi (✅ 28 Okt, `12` §3); balasan Local Lead sudah dibaca
 - [ ] **Tidak ada** kode, notebook, data Indonesia yang terunduh/terolah, atau slide KalenderApi di laptop sebelum 14 Nov 09.00
 - [ ] Hotspot HP berkuota ≥2 GB (unduhan Jam 0 ±396–503 MB)
 
@@ -32,5 +34,6 @@ Agen tidak mendaftar, login, push, atau mengirim apa pun. Semua langkah dilakuka
 - [ ] `data_licenses.md` mencantumkan lisensi setiap dataset non-NASA
 - [ ] Repo publik; README punya satu perintah reproduksi; tidak ada MAP_KEY atau rahasia di riwayat git; tidak ada data pribadi
 - [ ] Semua link (demo, repo, situs, cermin) dibuka dari **jendela incognito** di HP dan laptop
+- [ ] Fitur yang diminta statement tampil: pilih wilayah (preset + lintang/bujur), rentang tanggal, kartu bulan vs median, unduh CSV + PNG, palet aksesibel (`12` §4)
 - [ ] Tekan submit; **screenshot halaman konfirmasi**; catat jamnya
 - [ ] Kalau ada pitch lokal: deck 7 slide (judul dihitung) dan video cadangan ada di 2 laptop + HP

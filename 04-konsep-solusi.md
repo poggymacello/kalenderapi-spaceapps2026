@@ -45,7 +45,7 @@ Tagline (EN): *"One fire record, every satellite, any place: know when your area
 | Jika penulisnya… | Yang mereka cari | Yang kita tunjukkan |
 |---|---|---|
 | **NASA (FIRMS / tim sains api)** | Produk standar, ketidakpastian, validasi independen, kosakata "harmonized, uncertainties, independent reference" | **MVP:** M2 vs M1 dengan LOYO + cek vs luas terbakar SiPongi + pita. *Stretch:* M3, spatial-block, MCD64A1, slide diagnosa drift |
-| **AEB/INPE (Brasil)** | Seri referensi yang bertahan melewati pergantian satelit | **MVP:** argumen bahwa satuan acuan VIIRS bertahan setelah MODIS pensiun. *Stretch:* mode seri referensi setara-Aqua, rantai NOAA-20/21 setelah S-NPP berhenti (2 Nov 2026), contoh Pará (Brasil) |
+| **AEB/INPE (Brasil)** *(28 Okt: kredit foto statement = CONAE Argentina, jadi baris ini kurang mungkin; lihat `12` §1)* | Seri referensi yang bertahan melewati pergantian satelit | **MVP:** argumen bahwa satuan acuan VIIRS bertahan setelah MODIS pensiun. *Stretch:* mode seri referensi setara-Aqua, rantai NOAA-20/21 setelah S-NPP berhenti (2 Nov 2026), contoh Pará (Brasil) |
 
 ## 6. Peta kriteria juri → bukti di produk
 | Kriteria | Bukti |
@@ -61,14 +61,16 @@ Inti yang **tidak berubah** apa pun isi statement: grid 0,1° × fire cell-day �
 
 | # | Kalau statement… | Yang naik ke MVP | Yang turun ke stretch | Biaya tambahan | Keputusan 28 Okt |
 |---|---|---|---|---|---|
-| S1 | Meminta satuan acuan **setara-MODIS** atau "MODIS-like continuity" | Arah dibalik: VIIRS → setara-Aqua dengan bentuk M2 yang sama (fit di jendela yang sama). Kalender tetap ditampilkan juga dalam satuan VIIRS sebagai opsi | Tidak ada | ±1 jam (simetris dengan M2) | ☐ |
-| S2 | Meminta kalender **mingguan/harian** | Klimatologi dasarian **VIIRS-saja** untuk 2012+ (tidak boleh dari MODIS, lihat `05` §2.4); kalender bulanan harmonisasi untuk 2002+ | Bulletin, ENSO | ±2 jam | ☐ |
-| S3 | Mewajibkan **AOI bebas** (gambar poligon / unggah) | Kustom poligon (Turf.js di atas grid sparse) | Kalender per kabupaten, ekspor CSV | ±3 jam | ☐ |
-| S4 | Menekankan **global / negara lain** | Satu wilayah non-Indonesia sebagai bukti generalisasi (berkas negara FIRMS ada untuk semua negara; kandidat: Brasil/Pará kalau penulisnya AEB/INPE) | Provinsi ke-3 | ±2 jam | ☐ |
-| S5 | Meminta **intensitas** (FRP) atau luas, bukan jumlah | Varian "FRP-weighted cell-day" memakai field `frp` yang sudah ada di CSV | M3/M4 | ±1–2 jam | ☐ |
-| S6 | Meminta **peringatan dini / anomali musim berjalan** | Tracker 2026 vs amplop P10–P90 (VIIRS NRT, tanpa ML) | Komposit ENSO | ±2 jam | ☐ |
-| S7 | Menyebut **NOAA-20/21 wajib** (pasca S-NPP) | Rantai NOAA-20 → satuan S-NPP (overlap Apr 2018 – Nov 2026) | Gambut | ±2 jam | ☐ |
-| S8 | Menyebut dataset wajib lain (mis. MCD64A1, VNP14A1) | Dataset itu masuk validasi atau normalisasi observasi | Butir stretch dengan biaya setara | tergantung | ☐ |
+| S1 | Meminta satuan acuan **setara-MODIS** atau "MODIS-like continuity" | Arah dibalik: VIIRS → setara-Aqua dengan bentuk M2 yang sama (fit di jendela yang sama). Kalender tetap ditampilkan juga dalam satuan VIIRS sebagai opsi | Tidak ada | ±1 jam (simetris dengan M2) | **Tidak aktif** (statement tidak menentukan satuan) |
+| S2 | Meminta kalender **mingguan/harian** | Klimatologi dasarian **VIIRS-saja** untuk 2012+ (tidak boleh dari MODIS, lihat `05` §2.4); kalender bulanan harmonisasi untuk 2002+ | Bulletin, ENSO | ±2 jam | **Tidak aktif** (statement memakai bulan) |
+| S3 | Mewajibkan **AOI bebas** (gambar poligon / unggah) | Kustom poligon (Turf.js di atas grid sparse) | Kalender per kabupaten, ekspor CSV | ±3 jam | **Aktif sebagian:** MVP = preset + input lintang/bujur + radius (±1,5 jam); poligon = stretch tier 1. Ekspor CSV **tidak** turun (diminta statement, lihat S9 di `12`) |
+| S4 | Menekankan **global / negara lain** | Satu wilayah non-Indonesia sebagai bukti generalisasi (berkas negara FIRMS ada untuk semua negara; kandidat: Brasil/Pará kalau penulisnya AEB/INPE) | Provinsi ke-3 | ±2 jam | **Tidak untuk MVP.** Stretch tier 1: satu wilayah Argentina (penulis kemungkinan CONAE [inf]) |
+| S5 | Meminta **intensitas** (FRP) atau luas, bukan jumlah | Varian "FRP-weighted cell-day" memakai field `frp` yang sudah ada di CSV | M3/M4 | ±1–2 jam | **Tidak aktif** (statement meminta jumlah hotspot) |
+| S6 | Meminta **peringatan dini / anomali musim berjalan** | Tracker 2026 vs amplop P10–P90 (VIIRS NRT, tanpa ML) | Komposit ENSO | ±2 jam | **Aktif:** MVP = kartu "bulan lengkap terakhir (Okt 2026) vs median 2002–2025 + P25–P75" (±1 jam); tracker kumulatif tetap stretch |
+| S7 | Menyebut **NOAA-20/21 wajib** (pasca S-NPP) | Rantai NOAA-20 → satuan S-NPP (overlap Apr 2018 – Nov 2026) | Gambut | ±2 jam | **Tidak aktif** (tidak disebut); tetap stretch tier 2 untuk Nov 2026 |
+| S8 | Menyebut dataset wajib lain (mis. MCD64A1, VNP14A1) | Dataset itu masuk validasi atau normalisasi observasi | Butir stretch dengan biaya setara | tergantung | **Tunggu tab Resources 13 Nov** (FIRMS disebut sebagai saran) |
+
+> **Diputuskan Rab 28 Okt 2026 malam** setelah membaca statement resmi (rincian dan dua baris baru S9 rentang tanggal + unduh, S10 palet aksesibel: `12` §2–§3). Tiga baris aktif berbiaya (S3, S6, S9) → aturan di bawah dijalankan: **provinsi preset turun ke 2 (Riau + Kalteng)**; Sumsel lewat input lintang/bujur dan kembali kalau checkpoint #2 hijau.
 
 **Aturan:** setiap baris yang naik harus menurunkan sesuatu dengan biaya setara. Batas 39 jam tidak berubah. Kalau ≥3 baris aktif sekaligus, kurangi provinsi menjadi 2 (Riau + Kalteng).
 

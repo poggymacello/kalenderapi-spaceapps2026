@@ -7,7 +7,8 @@ Disusun Jumat 23 Okt 2026. Semua isi file ini boleh dilakukan sebelum 14 Nov (be
 > - **FAQ 2026 mengganti istilah "AI" menjadi "Super Intelligence (SI)"** dan menyatakan setiap submission **wajib** menjelaskan cara alat SI dipakai. Semua file sudah diperbarui (`08`, `09`, `10`).
 > - **T&C 2026 (diperbarui 7 Agu 2026):** acara mulai 14 Nov; data/kode non-NASA wajib tersedia bebas atau berlisensi OSI dan **lisensinya didokumentasikan**; **semua sumber wajib disitasi** (nominasi bisa dicabut kalau tidak); konten asli otomatis Apache 2.0 kalau tidak memilih lisensi; tidak boleh ada data pribadi (PII); video wajib karya sendiri tanpa pelanggaran hak cipta, dan setiap orang yang tampil harus memberi izin tertulis.
 > - **Mengunduh data lebih awal:** FAQ dan T&C tidak membahasnya secara eksplisit. Keputusan: **tidak diunduh sebelum 14 Nov 09.00** kecuali Local Lead mengizinkan secara tertulis (pertanyaan 6 di §2). Runbook dan manifest berkas sudah siap (`07` §7; `JURI_90/firms_manifest_23okt2026.tsv`). Memasang alat dan membuat akun tetap boleh.
-> - Halaman tantangan `…/2026/challenges/harmonization-of-modis-and-viirs-hot-spots/` aktif (HTTP 200), isinya masih judul saja.
+> - ~~Halaman tantangan `…/2026/challenges/harmonization-of-modis-and-viirs-hot-spots/` aktif (HTTP 200), isinya masih judul saja.~~
+> - **Update Rab 28 Okt malam:** statement lengkap terbit; tantangan kita **ada** di daftar 14 tantangan 2026. Slug yang benar: `/2026/challenges/modis-and-viirs-hot-spots/`. FAQ dicek ulang: aturan larangan mulai lebih awal tidak berubah. Keputusan matriks dan perubahan MVP: `12`. Paket rekrut: `13`. Skrip wawancara: `14`. Checklist hari-H: `15`.
 
 > **Bentrok jadwal yang perlu diingat:** 28 Okt (AI Builder kirim formulir), 31 Okt (IEEEXtreme), 6–8 Nov (Codex Hackathon Jakarta), 13 Nov (laporan dana Wasit). Tugas di bawah sudah menghindari tanggal itu.
 
@@ -16,25 +17,27 @@ Disusun Jumat 23 Okt 2026. Semua isi file ini boleh dilakukan sebelum 14 Nov (be
 ## 1. Checklist bertanggal
 | Tanggal | Tugas | Siapa | Selesai kalau… | ✓ |
 |---|---|---|---|---|
-| 🆕 **Sab 24 Okt (paling mendesak)** | Tim belum ada per 23 Okt, padahal skor plan mengandaikan 4–5 orang. Kirim pesan rekrut §4.1 **hari ini** ke ≥3 grup. Kalau sampai Min 25 Okt belum ada orang statistik, pakai rencana 2 orang di `08` | Poggy | Pesan terkirim di ≥3 grup | ☐ |
+| ⚠️ **Lewat (28 Okt: belum terkirim)** → diganti **Kam 29 Okt pagi**, pakai `13` §3 | Tim belum ada per 23 Okt, padahal skor plan mengandaikan 4–5 orang. Kirim pesan rekrut §4.1 **hari ini** ke ≥3 grup. Kalau sampai Min 25 Okt belum ada orang statistik, pakai rencana 2 orang di `08` | Poggy | Pesan terkirim di ≥3 grup | ☐ |
 | **Jum 23 – Min 25 Okt** | **Rekrut tim 4–5 orang** (§4.1). Wajib ada: **A = statistik/Python** (GLM, validasi silang) dan **D = GIS/geodesi/kehutanan** (SiPongi, batas wilayah, cerita). Tambahan: C = web dev, E = desain/video (opsional) | Poggy | 3–4 nama bersedia, peran tertulis | ☐ |
-| **Sel 27 Okt** | **Kunci tim.** Satu orang = satu tim. Semua bisa hadir penuh 14–15 Nov | Poggy | Daftar final + peran A–E | ☐ |
-| Sel 27 – Rab 28 Okt | **Semua anggota mendaftar** di spaceappschallenge.org dan **join Local Event Bandung yang sama**. Ketua membuat tim dan mengundang anggota | Semua | Screenshot halaman tim yang menampilkan semua anggota + Bandung | ☐ |
+| ~~Sel 27 Okt~~ → **Sel 3 Nov** | **Kunci tim** dengan kesepakatan `13` §5. Satu orang = satu tim. Semua bisa hadir penuh 14–15 Nov. Kalau belum ada orang statistik: rencana 2 orang | Poggy | 3–4 balasan "setuju" di grup | ☐ |
+| ~~Sel 27 – Rab 28 Okt~~ → **paling lambat Kam 5 Nov** | **Semua anggota mendaftar** di spaceappschallenge.org dan **join Local Event Bandung yang sama**. Ketua membuat tim dan mengundang anggota | Semua | Screenshot halaman tim yang menampilkan semua anggota + Bandung | ☐ |
 | Sab 24 – Rab 28 Okt | **Akun alat:** Earthdata Login (semua), **FIRMS MAP_KEY** (minimal B dan A; gratis via email), **Google Earth Engine** non-komersial (A, untuk stretch Tier 3), akun Cloudflare Pages + GitHub (B, C) | Semua | Daftar akun di grup (tanpa menulis password/MAP_KEY di grup) | ☐ |
 | **Sen 26 Okt** | **Email Local Lead** (§2). Kirim sendiri | Poggy | Email terkirim | ☐ |
-| **Rab 28 Okt** | **Baca pernyataan tantangan lengkap** (§5). Bandingkan dengan asumsi di 01, 04, 05. **Isi kolom "keputusan" di matriks adaptasi `04` §7** (S1–S8), lalu ubah file yang terdampak. Catatan: 28 Okt juga hari kirim formulir AI Builder; sisihkan 60 menit malam hari | Semua (baca); Poggy + A (putuskan) | Matriks `04` §7 terisi + catatan "statement vs asumsi" di file ini | ☐ |
-| Rab 28 – Jum 30 Okt | **Kirim pesan permintaan wawancara** ke 2–3 kontak BPBD Riau/Kalteng/Sumsel atau Daops Manggala Agni (§4.2) | D (atau Poggy) | Minimal 1 jadwal wawancara | ☐ |
+| **Rab 28 Okt** | **Baca pernyataan tantangan lengkap** (§5). Bandingkan dengan asumsi di 01, 04, 05. **Isi kolom "keputusan" di matriks adaptasi `04` §7** (S1–S8), lalu ubah file yang terdampak. Catatan: 28 Okt juga hari kirim formulir AI Builder; sisihkan 60 menit malam hari | Semua (baca); Poggy + A (putuskan) | Matriks `04` §7 terisi + catatan "statement vs asumsi" di file ini | ✅ Agen 28 Okt (`12`). Poggy tinggal membaca `12` (10 menit) dan menyetujui |
+| **Kam 29 Okt** (tindak lanjut Min 1 Nov) | **Kirim pesan permintaan wawancara** `14` §2 ke 2–3 kontak resmi BPBD Riau/Kalteng atau Daops Manggala Agni | Poggy (D kalau sudah ada) | Minimal 1 jadwal wawancara | ☐ |
 | Kam 29 Okt – Kam 5 Nov | **Latihan stack di proyek mainan lain** (§6). Kode latihan **tidak dibawa** ke repo hari-H | A, B, C | Tiap orang pernah menjalankan bagiannya dari awal sampai deploy | ☐ |
 | Sab 31 Okt | (IEEEXtreme) libur | — | — | — |
-| Sen 2 – Kam 5 Nov | **Wawancara 1 praktisi** (30 menit, §4.3). Tulis ringkasan 1 halaman | D (+ Poggy) | Ringkasan wawancara + izin dikutip (ya/tidak) | ☐ |
-| Sen 2 Nov | Rapat online 45 menit: peran, baca ulang MVP `08`, siapa jaga malam | Semua | — | ☐ |
+| Sel 3 – Kam 5 Nov **atau** Sen 9 – Rab 11 Nov | **Wawancara 1 praktisi** (30 menit, skrip `14` §3). Ringkasan 1 halaman (`14` §5) | Poggy / D | Ringkasan + izin dikutip | ☐ |
+| ~~Sen 2 Nov~~ → **Sel 10 Nov** | Rapat online 45 menit: peran, MVP baru (`12` §4), checklist `15`, siapa jaga malam | Semua | — | ☐ |
+| Sen 2 Nov | Telepon saring kandidat 10 menit per orang (`13` §4) | Poggy | Pilihan per peran | ☐ |
+| Sel 3 Nov | Space Apps Connect buka: pasang pesan `13` §3.3 kalau peran A/D masih kosong | Poggy | Pesan terpasang | ☐ |
 | Jum 6 – Min 8 Nov | (Codex Hackathon, Poggy di Jakarta) libur KalenderApi | — | — | — |
 | 🆕 Sel 3 Nov | Cek apakah data S-NPP benar-benar berhenti 2 Nov (Earthdata alert + `data_availability` FIRMS dengan MAP_KEY). Hasilnya menentukan hook pitch (`09` §6) | Poggy | Baris #1 §3 diperbarui | ☐ |
 | 🆕 Sel 3 Nov | Baca panduan Space Apps Connect; buka SiPongi, aqua.nasa.gov, dan volcano.si.edu dari browser (tidak terjangkau dari koneksi agen 23 Okt) | Poggy | Baris #9–#10 §3 diperbarui | ☐ |
 | **Sen 9 – Rab 11 Nov** | **Cek ulang fakta** (§3), terutama yang bertanda "cek lagi" | Poggy + D | Kolom "hasil" diperbarui | ☐ |
 | Sel 10 Nov | Baca balasan Local Lead; sesuaikan jam freeze dan submit di `08` kalau pitch lokal punya jadwal khusus | Poggy | `08` diperbarui | ☐ |
 | Kam 12 Nov | Laptop semua anggota siap: Python 3.12 + DuckDB + pandas + geopandas + statsmodels; Node + Vite; Git. Isi daya, cek charger | Semua | Screenshot versi | ☐ |
-| **Jum 13 Nov** | **Baca panduan Judging & Submission 2026** (batas demo ≤30 detik / ≤7 slide, aturan AI). Ubah `01` dan `09` kalau berbeda | Poggy + D | — | ☐ |
+| **Jum 13 Nov** | **Baca panduan Judging & Submission 2026** (batas demo ≤30 detik / ≤7 slide, aturan SI) **dan tab Resources tantangan** (terbit 13 Nov; putuskan S8). Ubah `01`, `09`, `12` kalau berbeda. Ikuti `15` §A | Poggy + D | — | ☐ |
 | **Sab 14 Nov 09.00** | Mulai. Ikuti `08` | Semua | — | — |
 
 ---
@@ -84,6 +87,8 @@ Dicek 23 Okt 2026 lewat pencarian web dan cek header HTTP (tanpa mengunduh data)
 ---
 
 ## 4. Rekrut, outreach, dan wawancara
+> **28 Okt:** pesan rekrut versi baru (dengan judul tantangan resmi, garis waktu baru, saringan, dan kesepakatan tim) ada di `13`. Skrip wawancara versi baru di `14`. Teks di §4.1–4.3 di bawah disimpan sebagai arsip.
+
 ### 4.1 Pesan rekrut (WhatsApp/LINE grup angkatan, himpunan, unit)
 > **Cari 2–4 teman tim NASA Space Apps 2026 (Bandung), 14–15 Nov** 🛰️
 > Hackathon resmi NASA, 2 hari (Sab 14 Nov 09.00 – Min 15 Nov malam), Local Event Bandung. Juara lokal bisa jadi Global Nominee.
@@ -140,14 +145,15 @@ Catatan: cari kontak resmi (situs/media sosial BPBD provinsi, Daops Manggala Agn
 ---
 
 ## 5. Hari statement terbit (Rab 28 Okt): yang harus dibandingkan
-- [ ] Judul dan nomor tantangan sama?
-- [ ] Siapa penulisnya (NASA atau Space Agency Partner, misalnya AEB/INPE)? Ubah penekanan di 04 §5 kalau perlu
-- [ ] Apakah statement **menentukan satuan acuan** (VIIRS-equivalent atau MODIS-equivalent)? Kalau statement meminta MODIS-equivalent, keputusan di kotak atas `05` harus ditinjau ulang **hari itu juga** (dan dicatat di sini)
-- [ ] Definisi "burning activity calendar" dan resolusi waktu yang diminta (bulan/minggu/hari)
-- [ ] Apakah area of interest wajib bebas (gambar poligon)? Kalau wajib, kustom poligon naik dari stretch tier 3 ke MVP, dan sesuatu yang lain harus turun
-- [ ] Dataset yang disebut wajib atau disarankan
-- [ ] Contoh keluaran atau pengguna yang disebut
-- [ ] Istilah resmi yang dipakai (salin ke `09` §5)
+*Diisi agen 28 Okt malam (rincian `12`):*
+- [x] Judul dan nomor tantangan sama? **Judul sama.** Nomor tidak ditampilkan di halaman resmi
+- [x] Siapa penulisnya? **Tidak disebut;** kredit foto CONAE (Argentina) → kemungkinan CONAE [inf]. `04` §5 diberi catatan
+- [x] Apakah statement **menentukan satuan acuan**? **Tidak.** Statement hanya meminta sensor asal "tidak lagi penting". Keputusan setara-VIIRS di `05` tetap
+- [x] Definisi "burning activity calendar" dan resolusi waktu: **jumlah hotspot per bulan, awal 2000-an sampai sekarang**, plus perbandingan bulan berjalan vs median historis
+- [x] Apakah area of interest wajib bebas? **Disarankan, tidak wajib** (gambar di peta atau lintang/bujur). MVP: input lintang/bujur + radius; poligon naik ke stretch tier 1; provinsi preset turun ke 2
+- [x] Dataset yang disebut wajib atau disarankan: **FIRMS (MODIS + VIIRS) disarankan**; tab Resources baru 13 Nov
+- [x] Contoh keluaran atau pengguna: web app, kalender, pilih wilayah + rentang tanggal, unduh analitik/visualisasi, CSV hotspot, color ramp aksesibel; pengguna = early warning & emergency responders, ilmuwan, land managers, firefighters
+- [x] Istilah resmi yang dipakai: disalin ke `09` §5 dan `12` §5
 
 ---
 
@@ -164,10 +170,11 @@ Tujuannya melatih tangan dengan alat yang sama, memakai **data dan topik lain**.
 ---
 
 ## 7. Yang hanya bisa dilakukan manusia
-- [ ] Merekrut dan mengunci anggota tim
+- [ ] Memutuskan bentrok EAGxBerlin vs 14–15 Nov **sebelum** mengirim pesan rekrut (`13` §0)
+- [ ] Merekrut dan mengunci anggota tim (`13`)
 - [ ] Mendaftar di spaceappschallenge.org dan join Local Event Bandung (tiap anggota sendiri)
 - [ ] Membuat akun Earthdata, FIRMS MAP_KEY, GEE (simpan kunci sendiri, jangan ditempel di grup)
 - [ ] Mengirim email ke Local Lead dan pesan ke praktisi
 - [ ] Melakukan wawancara
-- [ ] Mengisi matriks adaptasi `04` §7 setelah membaca statement 28 Okt
+- [x] ~~Mengisi matriks adaptasi `04` §7~~ (diisi agen 28 Okt; Poggy cukup menyetujui `12` §3)
 - [ ] Membuka SiPongi, aqua.nasa.gov, dan GVP dari browser (tidak terjangkau dari agen)

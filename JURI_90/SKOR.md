@@ -1,6 +1,27 @@
 # JURI_90 — Skor KalenderApi (NASA Space Apps 2026, Local Event Bandung)
 Dinilai 23–24 Okt 2026 dengan protokol `03-MEGA-PROMPT-JURI-90.md`. **Yang dinilai adalah rencana** (01–11). Kode, data olahan, slide, dan video dibuat 14–15 Nov. Pernyataan tantangan lengkap baru terbit 28 Okt, jadi rencana dibuat supaya bisa beradaptasi (`04` §7).
 
+## 0. Pembaruan Rabu 28 Okt 2026 malam (statement resmi terbit)
+**Temuan utama:** tantangan **"Harmonization of MODIS and VIIRS Hot Spots" ada** di daftar 14 tantangan 2026, dengan statement lengkap; tidak perlu pemetaan ulang. Statement meminta persis inti rencana kita (harmonisasi lalu web app kalender), plus empat hal yang belum ada di MVP: **pilih wilayah + rentang tanggal**, **unduh analitik/CSV**, **bulan berjalan vs median historis**, dan **color ramp aksesibel**. Kredit foto statement = **CONAE (Argentina)** → penulis kemungkinan CONAE [inf], bukan AEB/INPE. Tab Resources baru terbit 13 Nov. Slug resmi `/2026/challenges/modis-and-viirs-hot-spots/` (slug di `11` lama salah). FAQ dicek ulang: larangan mulai lebih awal tidak berubah.
+
+**Yang dikerjakan (tanpa kode):** `12` (statement vs rencana, matriks S1–S10 diputuskan, MVP baru, kosakata resmi, batas persiapan) · `13` (paket rekrut: keputusan awal, garis waktu, profil per peran, 3 pesan siap kirim, saringan tanpa mengerjakan tantangan, kesepakatan tim) · `14` (skrip wawancara 30 menit BPBD/Manggala Agni + pesan permintaan + templat ringkasan) · `15` (checklist hari-H satu halaman) · `04` §7 terisi · `08`, `01`, `09`, `11`, `CARA_KIRIM` diperbarui.
+
+| Kriteria (bobot) | J1 | J2 | J3 | J4 | Rata-rata 24 Okt → 28 Okt |
+|---|---|---|---|---|---|
+| Impact (20) | 8 | 8 → 9 | 9 | 7 | 8,00 → 8,25 |
+| Creativity (20) | 8 | 7 | 8 | 7 | 7,50 → 7,50 |
+| Validity (20) | 9 | 8 | 8 | 8 | 8,25 → 8,25 |
+| Relevance (20) | 9 | 9 | 9 → 10 | 8 → 9 | 8,75 → 9,25 |
+| Presentation (20) | 9 | 8 → 9 | 9 | 8 | 8,50 → 8,75 |
+| **Skor berbobot** | | | | | **82 → 84** |
+
+- **Relevance +0,5:** setiap permintaan eksplisit statement kini punya tempat di MVP (`12` §2, §4). J4: risiko "statement meminta hal lain" (dulu ditutup dengan matriks) kini hilang karena statement sudah dibaca.
+- **Impact +0,25:** J2 melihat kartu "Oct 2026 vs typical October" sebagai cara petugas memang menilai musim. Tetap tanpa suara pengguna nyata, jadi J4 tetap 7.
+- **Presentation +0,25:** kosakata resmi + satu kalimat demo yang dipahami dalam 5 detik.
+- **Creativity tetap:** pembeda kuat (wilayah Argentina, poligon, gambut, normalisasi observasi) masih stretch.
+- **Validity tetap:** penjelasan cell-day vs jumlah hotspot menambah, tetapi validasi turun dari 3 ke 2 provinsi (aturan matriks). Netral.
+- **Fatal flaw baru?** Tidak ada. Satu risiko dicatat: wawancara praktisi sebelum acara adalah area abu-abu; dimitigasi di `14` §0 (tanpa gambar, diungkap di halaman Project, tanya Local Lead).
+
 ## 1. Aturan (dibaca langsung 23 Okt malam)
 | Sumber | Isi | Dampak |
 |---|---|---|
@@ -61,18 +82,50 @@ F4 sebagian terbuka, tetapi tidak fatal untuk produk, karena angka yang tidak te
 ## 7. Sisa gap dan siapa yang menutup
 | Gap | Dampak | Pemilik | Kapan |
 |---|---|---|---|
-| **Tim belum direkrut** (skor mengandaikan 4–5 orang, termasuk satu orang statistik) | Semua kriteria; tanpa orang statistik, M2 turun ke M0 | Poggy | 24–27 Okt |
-| Wawancara praktisi BPBD/Manggala Agni | Impact J2/J3 +1 | D atau Poggy | 2–5 Nov |
-| Isi statement 28 Okt + keputusan matriks | Relevance | Poggy + A | 28 Okt |
+| **Tim belum direkrut** (per 28 Okt masih 0 orang; pesan belum terkirim) | Semua kriteria; tanpa orang statistik, M2 turun ke M0 | Poggy | Kirim Kam 29 Okt, kunci Sel 3 Nov, daftar ≤ Kam 5 Nov (`13`) |
+| Bentrok EAGxBerlin (keputusan ≤ 6 Nov) dengan 14–15 Nov | Kalau Poggy absen, tim tanpa ketua | Poggy | Putuskan sebelum mengirim pesan rekrut |
+| Wawancara praktisi BPBD/Manggala Agni | Impact J2/J3 +1, J4 +1 | Poggy / D | Pesan Kam 29 Okt; wawancara 3–5 atau 9–11 Nov (`14`) |
+| ~~Isi statement 28 Okt + keputusan matriks~~ | Relevance | ✅ Agen 28 Okt (`12`) | Poggy menyetujui |
+| Tab Resources + panduan Submission/Judging | Relevance, risiko aturan | Poggy + D | Jum 13 Nov |
 | Balasan Local Lead (format pitch, pre-download, Wi-Fi) | Risiko aturan | Local Lead | Sebelum 10 Nov |
 | Angka konteks yang dulu bersumber di `riset/` | Validity J4 | Poggy + D | 9–11 Nov |
 | S-NPP benar-benar berhenti 2 Nov? Status Aqua/Terra? | Hook pitch | Poggy | 3 Nov, 12 Nov |
-| Pembeda Tier 3 (normalisasi observasi) atau strata gambut | Creativity +1 | A (butuh tim ≥4) | Hari-H, setelah MVP hijau |
+| Pembeda stretch tier 1: wilayah Argentina (penulis kemungkinan CONAE) atau poligon; tier 3 normalisasi observasi | Creativity +1 | A, C (butuh tim ≥4) | Hari-H, setelah MVP hijau |
 
 ## 8. Plafon
-- **Plafon sekarang (rencana, tanpa aksi manusia): 82.** Yang membatasi: tim belum ada, belum ada suara pengguna, dan pembeda kreatif yang kuat masih berstatus stretch.
-- **Plafon setelah aksi manusia** (tim 4–5 dengan orang statistik, satu wawancara praktisi yang boleh dikutip, statement dibaca dan matriks diterapkan, balasan Local Lead): **±89**. Melewati 90 butuh setidaknya satu pembeda stretch tier 1–3 (strata gambut atau normalisasi observasi) yang benar-benar selesai di hari-H.
+- **Plafon sekarang (rencana, tanpa aksi manusia): 84** (28 Okt; sebelumnya 82). Yang membatasi: tim belum ada, belum ada suara pengguna, dan pembeda kreatif yang kuat masih berstatus stretch.
+- **Plafon setelah aksi manusia** (tim ≥4 dengan orang statistik, satu wawancara praktisi yang boleh dikutip, balasan Local Lead, tab Resources dibaca 13 Nov): **±90**. Statement sudah dibaca dan diterapkan (bukan lagi aksi manusia). Melewati 90 dengan pasti butuh satu pembeda stretch tier 1 yang benar-benar selesai di hari-H (wilayah Argentina atau poligon). Tanpa kode, 84 adalah batas jujur.
 
 ## 9. Bukti verifikasi
 - Semua edit dilakukan dengan skrip yang memeriksa setiap anchor cocok tepat satu kali (`assert`); salinan sebelum edit ada di scratchpad agen.
 - Kutipan aturan diambil dari halaman FAQ dan Legal spaceappschallenge.org yang diunduh 23 Okt (teks HTML), bukan dari ringkasan pihak ketiga.
+
+---
+
+## 10. Fase 2 anti-generik (Kam 29 Okt 2026)
+Sumber: `FORMULIR/00_BANK_CERITA_DAN_DATA_POGGY.md` §5 (karhutla) + `INDIVIDU/OCEANS2027-StudentPoster/01_ABSTRAK.md` (pekerjaan Poggy sendiri). Arsip: `_arsip_29okt\`. Tanpa kode.
+
+| Bagian | Sebelum | Sesudah |
+|---|---|---|
+| Hook pitch lokal (`09` §6) | "Indonesia's fire record just lost a satellite…" (bergantung cek 3 Nov) | Cerita Poggy: 4,45 juta pasangan piksel MODIS–VIIRS klorofil laut Indonesia; sambungan mentah ±menggandakan tren penurunan di paparan. Hook lama jadi cadangan |
+| Problem halaman Project (`09` §4.2) | kerangka + catatan "tulis ulang dari 02 §8" | 117 kata siap tempel: 1.161.193 ha (2023), 376.805 (2024), 359.619 (2025), 107.465 ha Jan–Jun 2026, dua URL |
+| Team halaman Project (`09` §4.8b, baru) | tidak ada | 102 kata: Medan, tim olimpiade astronomi SMA Unggul Del (IAAC 2021), dua pelajaran dari OCEANS (drift VIIRS R2018 setelah 2016; "alerts live in the tails"), pernyataan tidak ada kode yang dipakai ulang |
+| Paket rekrut (`13` §3.1–3.3) | pesan umum "cari teman tim" | data SiPongi + pengalaman sensor yang sama; 179 / 95 / 114 kata |
+| Konteks (`02` §8) | 202.004 ha s.d. Juli (Kompas) | ditambah angka bank + catatan periode berbeda; larangan angka titik panas tahunan tanpa URL |
+
+| Juri | Sebelum | Sesudah | Catatan |
+|---|---|---|---|
+| J1 NASA/ilmuwan | 84 | 85 | tim menunjukkan pengalaman nyata dengan pasangan sensor yang sama dan drift |
+| J2 BPBD | 84 | 84,5 | problem kini berangka resmi per tahun |
+| J3 | 84 | 84 | tim tetap belum ada |
+| J4 skeptis | 84 | 84,5 | angka bersumber; batas: dua URL sekunder |
+| **Rata-rata J1–J4** | **84** | **±84,5** | plafon tanpa kode tetap |
+| **J5 mentor** | **±20** | **±83** | hook, problem, tim, rekrut kini milik Poggy. Belum 85: belum ada momen karhutla pribadi (asap di Medan?) dan anggota tim belum ada |
+| **Rata-rata J1–J5** | — | **±84** | |
+
+### Pertanyaan untuk Poggy (menaikkan skor)
+1. **Asap:** pernah mengalami asap karhutla saat di Medan atau di asrama SMA Unggul Del (tahun berapa, apa yang terjadi: sekolah libur, masker)? → satu kalimat pembuka di Team dan hook pitch; J5 ±83 → ±88.
+2. **OCEANS:** angka 4,45 juta matchup dan tren −18,5 vs −8,5 %/dekade boleh diucapkan sebelum abstraknya dikirim? Kapan persisnya dikerjakan (Okt 2026)? → kalimat hook dan Team.
+3. **Tim olimpiade astronomi:** satu momen pengamatan teleskop yang kamu ingat → mengganti kalimat IAAC di Team menjadi cerita.
+4. **Ari ikut atau tidak?** → paragraf Team dan peran E di `13`.
+5. **EAGxBerlin vs Space Apps** sudah diputuskan? → kalimat "hadir penuh" di pesan rekrut.

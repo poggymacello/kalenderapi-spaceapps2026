@@ -46,13 +46,18 @@ Setiap judul slide berupa **kalimat lengkap** yang menyampaikan pesannya; badan 
 ## 4. Halaman Project sebagai "mini-paper"
 Urutan bagian (bahasa Inggris):
 1. **Summary** (≤100 kata) + tautan demo, repo, video.
-2. **Problem:** angka tidak sebanding + rekaman yang terputus + musim lokal (dari 02 §8). *Catatan 23 Okt: folder `riset/` yang dirujuk di 01–05 tidak ada di folder ini, jadi versi EN harus ditulis ulang dari 02 §8 dan setiap angka diberi URL di `numbers.md`.*
+2. **Problem:** angka tidak sebanding + rekaman yang terputus + musim lokal. **Teks siap tempel (EN, 29 Okt, 118 kata; setiap angka masuk `numbers.md` dengan URL di bawah):**
+   > Indonesia's forestry ministry counted 1,161,193 hectares burned in 2023, 376,805 in 2024 and 359,619 in 2025 (SiPongi, reported by ANTARA, 10 Feb 2026). Another 107,465 hectares burned from January to June 2026 (Kemenhut, reported by RCTI+, 19 Jul 2026). Agencies plan patrols, water bombing and emergency status around when the fire season starts in their own area. But the hotspot record they look at is two satellite records joined end to end: MODIS since 2000 and VIIRS since 2012, with different pixel sizes and detection limits. A hotspot count from 2010 and one from 2020 are not the same unit. KalenderApi puts both in VIIRS units, with uncertainty, so each area gets its own burning activity calendar.
+
+   URL: https://en.antaranews.com/news/403742/homepage-v2.html · https://www.rctiplus.com/news/detail/berita-utama/5431984/kemenhut--107-465-hektare-hutan-dan-lahan-ludes-terbakar-sepanjang-2026 (keduanya sekunder yang mengutip SiPongi/Kemenhut; SiPongi sendiri gagal dibuka 29 Okt, cek lagi 13 Nov dan ganti ke URL primer kalau bisa).
 3. **Data:** nama pendek produk, koleksi, rentang tanggal, DOI. FIRMS MCD14ML C6.1; VNP14IMG/VJ114IMG C2; geoBoundaries; GFW peat; RONI; SiPongi.
 4. **Method:** diagram pipeline + prinsip (satuan acuan VIIRS: MODIS → setara-VIIRS; okupansi; bulanan; fit Feb 2012 – Des 2022 bebas drift).
 5. **Validation:** tabel metrik M2 vs M1 (LOYO 11 fold, cakupan interval), cek independen vs SiPongi. Tambahkan extreme-year, spatial-block, drift test **hanya** kalau stretch-nya selesai.
 6. **Uncertainty:** cara pita dibuat, arti arsiran.
 7. **Limitations:** titik panas ≠ api ≠ luas; awan dan asap; gambut di bawah tanah; data uji kecil; batas bawah deteksi era MODIS.
 8. **User scenario:** BPBD Riau, Februari 2027.
+8b. **Team** (teks siap tempel, EN, 29 Okt; tambahkan satu kalimat per anggota setelah tim dikunci 3 Nov, isinya dari jawaban saring §4 di `13`):
+   > Poggy Macello Gultom (Electrical Engineering, ITB, final year) runs the data pipeline. He grew up in Medan, North Sumatra, and was on the astronomy olympiad team at SMA Unggul Del on Lake Toba (Silver Honour, IAAC 2021). In October 2026 he worked on the same two sensors for the ocean: 4.45 million MODIS–VIIRS chlorophyll matchups over Indonesian seas. Two lessons carry over. VIIRS R2018 drifted after 2016, so we fit only on a drift-free window. And a bridge that is right on average can still get alerts wrong, because alerts live in the tails. No code from that project is reused here.
 9. **Reproducibility:** repo publik, lingkungan, satu perintah untuk menjalankan ulang, provenance data.
 10. **Use of Super Intelligence (SI) tools** (istilah FAQ 2026; ikuti label persis di formulir): alat, untuk apa, bagian mana. Diambil dari `docs/ai_use.md`.
 11. **Data licenses:** tabel lisensi dataset non-NASA dari `docs/data_licenses.md` (wajib menurut T&C 2026).
@@ -60,10 +65,11 @@ Urutan bagian (bahasa Inggris):
 
 ## 5. Kosakata yang dipakai juri NASA
 - Pakai: *harmonized*, *uncertainties*, *independent reference*, *significance*, *out-of-sample skill*, *observation opportunity*, *orbit drift*, *continuity*.
+- **Istilah dari statement resmi 28 Okt (wajib dipakai persis):** *burning activity calendar*, *active fire hotspots*, *area of interest*, *critical periods*, *unusual conditions*, *historical median*, *early warning and emergency responders*, *land managers*, *firefighters*, *accessible color ramps*, *sensor of origin* (`12` §5). "Number of hotspots" boleh dipakai karena statement memakainya; "number of fires" tetap dihindari.
 - Hindari: "number of fires", "burned area" (kecuali untuk validasi), "AI predicts", "accuracy 99%".
 
 ## 6. Pitch lokal (versi 3–5 menit, sesuaikan dengan format yang diumumkan)
-1. **Hook (20 dtk):** "Indonesia's fire record just lost a satellite, twelve days ago." *(Hanya kalau cek 3 Nov memastikan S-NPP berhenti 2 Nov. Cadangan: "In 2012, Indonesia's hotspot count jumped [r]-fold overnight. Not one extra fire caused it.")*
+1. **Hook (20 dtk), versi utama 29 Okt (cerita nyata Poggy, 39 kata):** "In October I lined up four and a half million pairs of MODIS and VIIRS pixels over Indonesian seas. Splicing the two sensors roughly doubled the apparent decline on the shelves. Indonesia's fire record has the same splice, in 2012." *(Sumber: abstrak OCEANS 2027 Poggy, `INDIVIDU\OCEANS2027-StudentPoster\01_ABSTRAK.md`: 4,45 juta matchup; tren 2003–2016 −18,5 vs −8,5 %/dekade. Itu data klorofil, bukan api; kodenya tidak dipakai di KalenderApi.)* Hook lama jadi cadangan: "Indonesia's fire record just lost a satellite, twelve days ago." *(hanya kalau cek 3 Nov memastikan S-NPP berhenti 2 Nov)* atau "In 2012, Indonesia's hotspot count jumped [r]-fold overnight. Not one extra fire caused it." 
 2. **Masalah (40 dtk):** 95% vs 82% (KLHK SP.361/2017); lompatan [r]× di 2012 dari data kita; musim Riau ≠ Sumsel. "20.928 vs 666" hanya kalau sudah diverifikasi dengan screenshot (`11` §3 #5), dan disebut sebagai efek **filter kepercayaan**, bukan sensor.
 3. **Demo langsung (90 dtk):**
    - pilih Riau → toggle mentah/harmonisasi → kalender (Feb & Jun) → onset 2027

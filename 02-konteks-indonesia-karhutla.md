@@ -92,7 +92,9 @@ Sumber: `riset/B-indonesia-karhutla.md` (status 9 Okt 2026). Label: **[OFF]** pe
 4. Rekaman historisnya pun terputus: AVHRR berhenti 2025, Suomi-NPP 2 Nov 2026, MODIS mulai dimatikan akhir 2026–awal 2027. Padahal musim api bersifat lokal: Riau memuncak Februari dan Juni, Sumatera Selatan September.
 5. Karena bantuan BNPB baru turun setelah status siaga darurat ditetapkan, KalenderApi menyelaraskan MODIS dan VIIRS menjadi satu kalender aktivitas pembakaran per wilayah yang konsisten. Dengan begitu penetapan status, patroli, modifikasi cuaca, dan water bombing bisa dijadwalkan sebelum musim api setempat dimulai.
 
-**English:** lihat `riset/B-indonesia-karhutla.md` §7.1 (5 kalimat, semua bertaut sumber).
+**English:** lihat `riset/B-indonesia-karhutla.md` §7.1 (5 kalimat, semua bertaut sumber). Folder `riset/` tidak ada di sini; versi EN siap tempel kini di `09` §4 butir 2.
+
+**Pembaruan 29 Okt (bank data Poggy, diverifikasi 29 Okt):** luas karhutla **359.619,42 ha (2025)**, **376.805,05 ha (2024)**, **1.161.192,90 ha (2023)** (ANTARA English 10 Feb 2026 mengutip SiPongi Kemenhut: https://en.antaranews.com/news/403742/homepage-v2.html) dan **107.465,47 ha Jan–Jun 2026** (RCTI+/Sindonews 19 Jul 2026 mengutip Kemenhut). Kalimat 2 di atas memakai 202.004 ha s.d. Juli (Kompas 3 Okt 2026); itu periode lain (Jan–Jul) dan tidak ada di bank: pakai salah satu saja dan sebut periodenya. SiPongi gagal dibuka (DNS) dan total titik panas tahunan BMKG/BRIN **tidak ditemukan**; jangan mengutip angka titik panas tahunan tanpa URL di `numbers.md`.
 
 ## 9. Peringatan yang wajib tampil di aplikasi
 - Titik panas ≠ kebakaran ≠ luas terbakar. Satu kebakaran bisa terdeteksi sebagai beberapa titik.

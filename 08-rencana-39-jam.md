@@ -8,6 +8,8 @@
 
 > **Tambahan 23 Okt malam (JURI_90):** kickoff menjalankan matriks adaptasi `04` §7 · Jam 0 mengikuti runbook `07` §7 (±396 MB terverifikasi) · validasi cadangan MCD64A1 (NASA) · deklarasi penggunaan alat AI memakai istilah resmi 2026 **"Super Intelligence (SI)"** · `docs/data_licenses.md` dan `docs/numbers.md` (buku besar angka) wajib · produksi video dengan cek durasi ≤30,0 detik · rencana 2–3 orang karena tim **belum direkrut** per 23 Okt.
 
+> **Update Rab 28 Okt malam (statement resmi, `12` §4):** MVP sekarang **2 provinsi preset (Riau + Kalteng)** + input lintang/bujur + radius, filter rentang tanggal, kartu "Oct 2026 vs typical October" (median 2002–2025 + P25–P75), unduh CSV tabel bulanan + PNG kalender, dan palet ramah buta warna. Validasi SiPongi = 2 provinsi + nasional. Sumsel kembali kalau checkpoint #2 hijau. Ekspor CSV pindah dari stretch ke MVP. Poligon naik ke stretch tier 1. Checklist hari-H satu halaman: `15`.
+
 ## Peran (tim ideal 4–5 orang)
 | Kode | Peran | Tanggung jawab MVP | Profil |
 |---|---|---|---|

@@ -3,7 +3,7 @@ Sumber utama: `riset/C-judging-competitors.md` §1–2. Label: **[V]** dibaca la
 
 ## 1. Tantangannya
 - **Judul:** "Harmonization of MODIS and VIIRS Hot Spots". Satu repo peserta menyebutnya "Challenge #9".
-- **Isi lengkap belum terbit sampai 28 Okt 2026.** Halaman resminya baru menampilkan judul.
+- **Update Rab 28 Okt malam:** statement lengkap sudah terbit dan tantangan ini **ada** di daftar 14 tantangan 2026. Slug resmi: `/2026/challenges/modis-and-viirs-hot-spots/`. Kredit foto: CONAE (Argentina), jadi penulisnya kemungkinan CONAE [inf]. Tab Resources terbit 13 Nov. Rincian dan perbandingan dengan rencana: `12`.
 - **Inti yang tersirat** dari judul dan frasa yang beredar:
   - menyambung seri titik panas MODIS (2000–) dengan VIIRS (2012–) menjadi satu rekaman yang konsisten;
   - menghasilkan **kalender aktivitas pembakaran** untuk area yang dipilih pengguna.
